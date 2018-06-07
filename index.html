@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+let ventas=[{"id":11,"monto":500},
+	        {"id":2,"monto":700},
+	        {"id":55,"monto":300},
+	        {"id":88,"monto":470},
+	        {"id":1,"monto":300}];
+/*creamos los objetos con las "entre {},con sus propiedades separadas por comas dentro del arreglo*/
+ /*como es un arreglo esta entre´[]}
+ */
+ function Venta(){
+	 
+ }/*FUNCION CONSTRUCTORA, SE FORMA CON EL NOMBRE DEL ARREGLO Y LA PRIMER LETRA EN MAYUS*/
+ function montoVentas(){
+	 let total_ventas=0;
+	/* for(let i=0;i<ventas.length;i++) */
+	for (let i in ventas)
+	 {
+	 
+	 /* totalventas acumula el total*/
+	 /*PROXIMA CLASE FOR EACH*/
+	 total_ventas=total_ventas+ventas[i].monto;
+	 
+ }
+	 return total_ventas;
+	 }
+ alert(montoVentas());
+	</script>
+
+</body>
+</html>
